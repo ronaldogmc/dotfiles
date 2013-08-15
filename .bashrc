@@ -111,7 +111,10 @@ export GIT_PS1_SHOWUPSTREAM=auto
 export IRBRC=$HOME/.irbrc
 export CDPATH=$CDPATH:$HOME/workspace
 
-export PATH=$PATH:/opt/node/bin
+# Paths
+export PATH=./.bundle/binstubs:$PATH
+export PATH="/usr/local/heroku/bin:$PATH" # Heroku Toolbelt
+export PATH="$HOME/.pyenv/bin:$PATH" # pyenv
 
 USER_AT_HOST="\u@\h"
 if [[ $UID -ne 0 ]]; then
@@ -123,4 +126,9 @@ RVM_GIT='($($rvm_bin_path/rvm-prompt)) $(__git_ps1 "[ %s ]")'
 export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
 
 # Set vi mode
-set -o vi
+#set -o vi
+
+alias espresso='~/The-M-Project_v1.4.0/Espresso/bin/espresso.js'
+
+# pyenv init to enable shims and autocompletion
+eval "$(pyenv init -)"
