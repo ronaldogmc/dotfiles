@@ -1,17 +1,16 @@
 [user]
-	name = Daniel Teixeira
-	email = daniel@tagview.com.br
+	name = Lucas Pélos
+	email = lucas.pelos@gmail.com
 [alias]
 	st = status
 	co = checkout
 	ci = commit
 	last = cat-file commit HEAD
 	colete = blame
+[credential]
+	helper = cache
 [core]
-	excludesfile = /home/daniel/.gitignore
-[help]
-	format = web
-	autocorrect = -1
+	excludesfile = /home/lucas/.gitignore_global
 [push]
 	default = current
 [color]
