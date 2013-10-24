@@ -116,17 +116,21 @@ export PATH=./.bundle/binstubs:$PATH
 export PATH="/usr/local/heroku/bin:$PATH" # Heroku Toolbelt
 export PATH="$HOME/.pyenv/bin:$PATH" # pyenv
 
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.composer # Add Composer to PATH
+
 USER_AT_HOST="\u@\h"
 if [[ $UID -ne 0 ]]; then
   WORKING_DIR="${BRIGHT_YELLOW}\w${RESET}"
 else
   WORKING_DIR="${BRIGHT_RED}\w${RESET}"
 fi
+
 RVM_GIT='($($rvm_bin_path/rvm-prompt)) $(__git_ps1 "[ %s ]")'
 export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
 
 # Set vi mode
-#set -o vi
+# set -o vi
 
 alias espresso='~/The-M-Project_v1.4.0/Espresso/bin/espresso.js'
 
