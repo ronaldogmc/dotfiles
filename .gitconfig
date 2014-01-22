@@ -10,7 +10,7 @@
 [credential]
 	helper = cache
 [core]
-	excludesfile = /home/lucas/.gitignore_global
+	excludesfile = /home/lucas/.gitignore
 [push]
 	default = current
 [color]
