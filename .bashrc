@@ -136,5 +136,3 @@ alias espresso='~/The-M-Project_v1.4.0/Espresso/bin/espresso.js'
 
 # pyenv init to enable shims and autocompletion
 eval "$(pyenv init -)"
-
-PATH=$PATH:$HOME/.composer # Add Composer to PATH
