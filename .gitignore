@@ -1,9 +1,17 @@
+.arcconfig
+.bin
+bin/
+*~
+.rvmrc
+/vendor/ruby
 *.swp
 *.swo
 .rvmrc
+.rspec
 vendor/ruby
 vendor/bundle
 .bundle
 .bundle/**/*
 *~
+.sass-cache
 spec/acceptance/support/firefox3.6.rb
