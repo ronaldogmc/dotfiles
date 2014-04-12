@@ -113,6 +113,7 @@ export CDPATH=$CDPATH:$HOME/workspace
 
 # Paths
 export PATH="./.bundle/binstubs:$PATH"       # gems bins from local folder
+export PATH="./node_modules/.bin:$PATH"      # node bins from local folder
 export PATH="$HOME/.rvm/bin:$PATH"           # rvm
 export PATH="$HOME/.composer:$PATH"          # composer
 export PATH="$HOME/.pyenv/bin:$PATH"         # pyenv
@@ -136,3 +137,6 @@ alias espresso='~/The-M-Project_v1.4.0/Espresso/bin/espresso.js'
 
 # pyenv init to enable shims and autocompletion
 eval "$(pyenv init -)"
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
