@@ -12,7 +12,6 @@
 .rvmrc
 .sass-cache
 /vendor/ruby
-bin/
 spec/acceptance/support/firefox3.6.rb
 vendor/bundle
 vendor/ruby
