@@ -40,12 +40,12 @@ esac
 
 if [ -n "$force_color_prompt" ]; then
     if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
-	# We have color support; assume it's compliant with Ecma-48
-	# (ISO/IEC-6429). (Lack of such support is extremely rare, and such
-	# a case would tend to support setf rather than setaf.)
-	color_prompt=yes
+    # We have color support; assume it's compliant with Ecma-48
+    # (ISO/IEC-6429). (Lack of such support is extremely rare, and such
+    # a case would tend to support setf rather than setaf.)
+    color_prompt=yes
     else
-	color_prompt=
+    color_prompt=
     fi
 fi
 
@@ -114,12 +114,24 @@ export CDPATH=$CDPATH:$HOME/workspace
 # Paths
 export PATH="./.bundle/binstubs:$PATH"       # gems bins from local folder
 export PATH="./.bundle/bin:$PATH"            # gems bins from local folder
-export PATH="./node_modules/.bin:$PATH"      # node bins from local folder
 export PATH="$HOME/.rvm/bin:$PATH"           # rvm
 export PATH="$HOME/.composer:$PATH"          # composer
 export PATH="$HOME/.pyenv/bin:$PATH"         # pyenv
 export PATH="$HOME/.arc/arcanist/bin/:$PATH" # arcanist
 export PATH="/usr/local/heroku/bin:$PATH"    # Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+# NVM
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+# Set vi mode
+# set -o vi
+
+# pyenv init to enable shims and autocompletion
+# eval "$(pyenv init -)"
+
+# alias espresso='~/The-M-Project_v1.4.0/Espresso/bin/espresso.js'
 
 USER_AT_HOST="\u@\h"
 if [[ $UID -ne 0 ]]; then
@@ -130,14 +142,3 @@ fi
 
 RVM_GIT='($($rvm_bin_path/rvm-prompt)) $(__git_ps1 "[ %s ]")'
 export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
-
-# Set vi mode
-# set -o vi
-
-alias espresso='~/The-M-Project_v1.4.0/Espresso/bin/espresso.js'
-
-# pyenv init to enable shims and autocompletion
-eval "$(pyenv init -)"
-
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
