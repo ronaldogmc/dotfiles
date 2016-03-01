@@ -142,3 +142,9 @@ fi
 
 RVM_GIT='($($rvm_bin_path/rvm-prompt)) $(__git_ps1 "[ %s ]")'
 export PS1="${USER_AT_HOST}:${WORKING_DIR} ${RVM_GIT}\n$ "
+
+# Standalone applications
+STANDALONE_PATH="$HOME/standalone"
+alias popcorntime="$STANDALONE_PATH/Popcorn-Time/Popcorn-Time"
+alias ngrok="$STANDALONE_PATH/ngrok"
+alias redis="$STANDALONE_PATH/redis/src/redis-server"
