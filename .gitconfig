@@ -2,12 +2,13 @@
 	name = Lucas Pélos
 	email = lucas.pelos@gmail.com
 [alias]
-	st = status
-	co = checkout
 	ci = commit
-	last = cat-file commit HEAD
+	co = checkout
 	colete = blame
+	cp = cherry-pick
 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	last = cat-file commit HEAD
+	st = status
 [credential]
 	helper = cache
 [core]
