@@ -159,5 +159,5 @@ alias popcorntime="$STANDALONE_PATH/Popcorn-Time/Popcorn-Time"
 alias redis="$STANDALONE_PATH/redis/src/redis-server"
 alias stremio="$STANDALONE_PATH/stremio/Stremio.sh"
 
-# Wordpress MVS alias
+# Wordpress MVC alias
 alias wpmvc="WPMVC_WORDPRESS_PATH=./htdocs/wordpress/ ./htdocs/wp-content/plugins/wp-mvc/wpmvc"
